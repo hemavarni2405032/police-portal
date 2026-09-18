@@ -1,0 +1,526 @@
+// src/i18n/translations.js
+// Centralized localization dictionary & status value translator for English and Tamil
+
+export const translations = {
+  en: {
+    // Bottom Navigation - Police Portal
+    nav_home: 'Home',
+    nav_sos: 'SOS',
+    nav_cases: 'Cases',
+    nav_map: 'Map',
+    nav_profile: 'Profile',
+
+    // Bottom Navigation - User / Citizen Portal
+    nav_services: 'Services',
+    nav_faq: 'FAQ',
+
+    // Bottom Navigation - Admin Portal
+    nav_overview: 'Overview',
+    nav_roster: 'Roster',
+    nav_incidents: 'Incidents',
+    nav_analytics: 'Analytics',
+
+    // Auth & Portals
+    welcome_title: 'KOVAI KAVAL',
+    welcome_subtitle_police: '🛡️ OFFICER PORTAL',
+    welcome_subtitle_citizen: '🏛️ CITIZEN PORTAL',
+    welcome_subtitle_admin: '⚖️ COMMAND ADMIN PORTAL',
+    welcome_greeting: 'Welcome, Officer',
+    welcome_greeting_citizen: 'Welcome, Citizen',
+    welcome_greeting_admin: 'Welcome, Administrator',
+    welcome_desc: 'Sign in securely to access administrative services and emergency response tools.',
+    continue_mobile: 'Continue with Mobile Number',
+    continue_mobile_sub: 'Receive a one-time password (OTP) through SMS.',
+    continue_email: 'Continue with Email',
+    continue_email_sub: 'Receive a one-time password (OTP) through email.',
+    secure_access: '🔒 Secure Official Access',
+    authorized_only: 'Authorized Coimbatore City Police personnel only. Unauthorized access is strictly prohibited.',
+    copyright: '© Coimbatore City Police',
+
+    // Login Form Titles
+    police_login_title: 'Officer Login',
+    citizen_login_title: 'Citizen Login',
+    admin_login_title: 'Admin Command Login',
+    police_login_sub: 'Enter registered 10-digit mobile number for officer authentication',
+    citizen_login_sub: 'Enter your 10-digit mobile number to access Kovai Kaval emergency services',
+    admin_login_sub: 'Enter command credential mobile number for administrative access',
+
+    enter_mobile: 'Enter Mobile Number',
+    registered_mobile: 'Mobile Number',
+    send_otp: 'Send OTP →',
+    sms_note: 'An OTP will be sent to your registered mobile number via SMS.',
+    
+    // Phone & OTP Validation Messages
+    invalid_phone_err: 'Enter a valid 10-digit phone number.',
+    invalid_otp_err: 'Invalid OTP. Please try again.',
+    incomplete_otp_err: 'Enter the complete 6-digit OTP.',
+    otp_sent_success: 'OTP sent successfully.',
+    unable_send_otp: 'Unable to send OTP. Please try again.',
+
+    // OTP Screen
+    verify_identity: 'Verify OTP',
+    verify_sub: 'Enter the 6-digit OTP sent to your registered mobile number.',
+    verify_otp: 'VERIFY OTP →',
+    change_number: 'Change Mobile Number / Email',
+    resend_otp: 'Resend OTP in 30s',
+    resend_otp_btn: 'Resend OTP',
+    resend_timer_prefix: 'Resend OTP in ',
+    auth_success: 'Authentication Successful',
+    auth_success_sub: 'Welcome to Coimbatore Kovai Kaval Portal',
+    enter_portal: 'ENTER PORTAL →',
+    privacy_terms: 'By continuing, you agree to our Terms of Service & Privacy Policy',
+    language: 'Language',
+
+    // Citizen Portal Home
+    latest_news: 'LATEST NEWS',
+    view_all_news: 'View All →',
+    report_incident: '+ Report Incident',
+    recent_activity: 'RECENT ACTIVITY',
+    emergency_sos_response: '24/7 Emergency SOS Response',
+    emergency_sos_tag: 'KOVAI KAVAL EMERGENCY SOS',
+    sos_desc: 'Instant 1-tap dispatch to Coimbatore City Police Control Room. Live GPS location & nearest patrol vehicle dispatched automatically.',
+    sos_avg_time: '⏱ 3 Mins Avg Response',
+    sos_112_btn: '🚨 SOS 112',
+    quick_services: 'CITIZEN SERVICES',
+    service_complaint: 'File Complaint',
+    service_police_noc: 'Police Clearance',
+    service_lost_found: 'Lost & Found',
+    service_traffic: 'Traffic Alert',
+
+    // Dashboard
+    all_features: 'ALL FEATURES',
+    quick_shortcuts: 'Quick portal shortcuts',
+    active_cases: 'Active Cases',
+    sos_alerts: 'SOS Alerts',
+    on_duty: 'On Duty',
+    available: 'Available',
+    active: 'ACTIVE',
+    recent_incidents: 'RECENT INCIDENTS',
+    recent_sub: 'Latest station reports',
+    view_all: 'View All',
+    active_patrols: 'ACTIVE PATROLS',
+
+    // Features
+    feature_ai: 'AI Analysis',
+    feature_map: 'Live Incident Map',
+    feature_evidence: 'Evidence',
+    feature_women: 'Women & Child Safety',
+    feature_cases: 'Cases',
+    feature_officers: 'Officers',
+    feature_sos: 'SOS Alerts',
+    feature_analytics: 'Analytics',
+    feature_audit: 'Audit Log',
+    feature_settings: 'Settings',
+
+    // Cases
+    case_management: 'Case Management',
+    case_list: 'Case List',
+    case_details: 'Case Details',
+    case_id: 'Case ID',
+    complainant: 'Complainant',
+    incident: 'Incident',
+    evidence: 'Evidence',
+    location: 'Location',
+    timeline: 'Timeline',
+    status_active: 'ACTIVE',
+    status_closed: 'CLOSED',
+    status_pending: 'PENDING',
+    no_cases: 'No cases found',
+    no_cases_sub: 'There are no cases matching your filter.',
+    search_cases: 'Search cases...',
+    filter_all: 'All',
+    filter_active: 'Active',
+    filter_closed: 'Closed',
+    filter_pending: 'Pending',
+    assigned_officer: 'Assigned Officer',
+    case_type: 'Case Type',
+    filed_date: 'Filed Date',
+
+    // SOS
+    sos_center: 'SOS Emergency Response',
+    sos_active: 'Active SOS Alerts',
+    sos_details: 'SOS Details',
+    dispatch: 'Dispatch',
+    dispatch_unit: 'Dispatch Unit',
+    available_units: 'Available Units',
+    select_unit: 'Select Unit',
+    dispatch_confirm: 'Dispatch Confirmation',
+    dispatch_success: 'Dispatch Successful',
+    citizen_info: 'Citizen Information',
+    emergency_details: 'Emergency Details',
+    live_location: 'Live Location',
+    response_timeline: 'Response Timeline',
+    police_units: 'Police Units',
+    no_active_sos: 'No active SOS alerts',
+    no_active_sos_sub: 'All clear. No emergencies at this time.',
+    loading: 'Loading…',
+    error_load: 'Unable to load data. Please try again.',
+    retry: 'Retry',
+
+    // Map
+    live_map: 'Live Incident Map',
+    map_filters: 'Map Filters',
+    incidents: 'Incidents',
+    hotspots: 'Hotspots',
+    search_map: 'Search location…',
+    filter_all_map: 'All',
+    filter_sos: 'SOS',
+    filter_women: 'Women Safety',
+    filter_child: 'Child Safety',
+    filter_crime: 'Crime',
+    filter_missing: 'Missing Person',
+    filter_vehicle: 'Vehicle Theft',
+    filter_units: 'Police Units',
+    filter_stations: 'Police Stations',
+
+    // Officers
+    officer_management: 'Officer Management',
+    officer_profile: 'Officer Profile',
+    officer_list: 'Officer List',
+    rank: 'Rank',
+    station: 'Station',
+    duty_status: 'Duty Status',
+    leaderboard: 'Leaderboard',
+    performance: 'Performance',
+    contact: 'Contact',
+    assigned_cases: 'Assigned Cases',
+    assigned_sos: 'Assigned SOS',
+    activity: 'Activity',
+    no_officers: 'No officers found',
+
+    // Women Safety
+    women_safety: 'Women & Child Safety',
+    women_safety_sub: 'Special Protection Unit',
+    priority_alerts: 'Priority Alerts',
+    case_categories: 'Case Categories',
+
+    // AI
+    ai_intelligence: 'AI Case Intelligence',
+    risk_matrix: 'Risk Matrix',
+    ai_recommendations: 'AI Recommendations',
+    pattern_analysis: 'Pattern Analysis',
+    confidence: 'Confidence',
+    related_cases: 'Related Cases',
+
+    // Evidence
+    evidence_viewer: 'Evidence Viewer',
+    verification_status: 'Verification Status',
+    investigator_notes: 'Investigator Notes',
+
+    // Profile & Settings
+    my_profile: 'My Profile',
+    officer_id: 'Officer ID',
+    logout: 'Logout',
+    settings: 'Settings',
+    language_select: 'Language',
+    view_assigned_cases: 'View Assigned Cases',
+    view_assigned_sos: 'View Assigned SOS',
+    view_performance: 'View Performance',
+    view_activity: 'View Activity',
+    current_location: 'Current Location',
+
+    // Statuses
+    st_active: 'ACTIVE',
+    st_critical: 'CRITICAL',
+    st_high: 'HIGH',
+    st_medium: 'MEDIUM',
+    st_resolved: 'RESOLVED',
+    st_pending: 'PENDING',
+    st_available: 'AVAILABLE',
+    st_busy: 'BUSY',
+    st_en_route: 'EN ROUTE',
+    st_on_duty: 'ON DUTY',
+
+    // Common
+    back: '← Back',
+    save: 'Save',
+    cancel: 'Cancel',
+    view_details: 'View Details',
+    search: 'Search',
+    filter: 'Filter',
+    close: 'Close',
+    confirm: 'Confirm',
+    critical: 'CRITICAL',
+    high: 'HIGH',
+    medium: 'MEDIUM',
+    low: 'LOW',
+  },
+
+  ta: {
+    // Bottom Navigation - Police Portal
+    nav_home: 'முகப்பு',
+    nav_sos: 'அவசர உதவி',
+    nav_cases: 'வழக்குகள்',
+    nav_map: 'வரைபடம்',
+    nav_profile: 'சுயவிவரம்',
+
+    // Bottom Navigation - User / Citizen Portal
+    nav_services: 'சேவைகள்',
+    nav_faq: 'கேள்விகள்',
+
+    // Bottom Navigation - Admin Portal
+    nav_overview: 'கண்ணோட்டம்',
+    nav_roster: 'அதிகாரிகள்',
+    nav_incidents: 'சம்பவங்கள்',
+    nav_analytics: 'பகுப்பாய்வு',
+
+    // Auth & Portals
+    welcome_title: 'KOVAI KAVAL',
+    welcome_subtitle_police: '🛡️ அதிகாரி போர்டல்',
+    welcome_subtitle_citizen: '🏛️ குடிமகன் போர்டல்',
+    welcome_subtitle_admin: '⚖️ கட்டளை நிர்வாக போர்டல்',
+    welcome_greeting: 'வரவேற்கிறோம், அதிகாரி',
+    welcome_greeting_citizen: 'வரவேற்கிறோம், குடிமகனே',
+    welcome_greeting_admin: 'வரவேற்கிறோம், நிர்வாகியே',
+    welcome_desc: 'நிர்வாக சேவைகள் மற்றும் அவசர கால நடவடிக்கைகளை அணுக பாதுகாப்பாக உள்நுழையவும்.',
+    continue_mobile: 'மொபைல் எண்ணுடன் தொடரவும்',
+    continue_mobile_sub: 'SMS மூலம் ஒரு முறை கடவுச்சொல் (OTP) பெறவும்.',
+    continue_email: 'மின்னஞ்சலுடன் தொடரவும்',
+    continue_email_sub: 'மின்னஞ்சல் மூலம் ஒரு முறை கடவுச்சொல் (OTP) பெறவும்.',
+    secure_access: '🔒 பாதுகாப்பான அதிகாரப்பூர்வ அணுகல்',
+    authorized_only: 'அங்கீகரிக்கப்பட்ட கோயம்புத்தூர் நகர காவல்துறை பணியாளர்கள் மட்டுமே. அங்கீகரிக்கப்படாத அணுகல் கண்டிப்பாக தடைசெய்யப்படுகிறது.',
+    copyright: '© கோயம்புத்தூர் நகர காவல்துறை',
+
+    // Login Form Titles
+    police_login_title: 'அதிகாரி உள்நுழைவு',
+    citizen_login_title: 'குடிமகன் உள்நுழைவு',
+    admin_login_title: 'நிர்வாகி கட்டுப்பாடு உள்நுழைவு',
+    police_login_sub: 'அதிகாரி அங்கீகாரத்திற்காக பதிவுசெய்யப்பட்ட 10 இலக்க மொபைல் எண்ணை உள்ளிடவும்',
+    citizen_login_sub: 'கோவை காவல் அவசர சேவைகளை அணுக உங்கள் 10 இலக்க மொபைல் எண்ணை உள்ளிடவும்',
+    admin_login_sub: 'நிர்வாக அணுகலுக்கு கட்டளை சான்றளிக்கப்பட்ட மொபைல் எண்ணை உள்ளிடவும்',
+
+    enter_mobile: 'மொபைல் எண்ணை உள்ளிடவும்',
+    registered_mobile: 'மொபைல் எண்',
+    send_otp: 'OTP அனுப்பவும் →',
+    sms_note: 'OTP உங்கள் பதிவு செய்யப்பட்ட மொபைல் எண்ணுக்கு SMS மூலம் அனுப்பப்படும்.',
+    
+    // Phone & OTP Validation Messages
+    invalid_phone_err: 'சரியான 10 இலக்க தொலைபேசி எண்ணை உள்ளிடவும்.',
+    invalid_otp_err: 'தவறான OTP. மீண்டும் முயற்சிக்கவும்.',
+    incomplete_otp_err: 'முழுமையான 6 இலக்க OTP-ஐ உள்ளிடவும்.',
+    otp_sent_success: 'OTP வெற்றிகரமாக அனுப்பப்பட்டது.',
+    unable_send_otp: 'OTP அனுப்ப முடியவில்லை. மீண்டும் முயற்சிக்கவும்.',
+
+    // OTP Screen
+    verify_identity: 'OTP சரிபார்ப்பு',
+    verify_sub: 'உங்கள் பதிவு செய்யப்பட்ட மொபைல் எண்ணிற்கு அனுப்பப்பட்ட 6 இலக்க OTP-ஐ உள்ளிடவும்.',
+    verify_otp: 'OTP சரிபார்க்கவும் →',
+    change_number: 'மொபைல் எண் / மின்னஞ்சலை மாற்றவும்',
+    resend_otp: '30 வினாடிகளில் OTP-ஐ மீண்டும் அனுப்பலாம்',
+    resend_otp_btn: 'OTP மீண்டும் அனுப்பவும்',
+    resend_timer_prefix: 'மீண்டும் அனுப்ப ',
+    auth_success: 'அங்கீகரிப்பு வெற்றிகரமாக முடிந்தது',
+    auth_success_sub: 'கோயம்புத்தூர் கோவை கவல் போர்டலுக்கு வரவேற்கிறோம்',
+    enter_portal: 'போர்டலில் நுழையவும் →',
+    privacy_terms: 'தொடர்வதன் மூலம், எங்கள் சேவை விதிமுறைகள் & தனியுரிமை கொள்கையை ஏற்கிறீர்கள்',
+    language: 'மொழி',
+
+    // Citizen Portal Home
+    latest_news: 'சமீபத்திய செய்திகள்',
+    view_all_news: 'அனைத்தும் →',
+    report_incident: '+ சம்பவத்தை புகாரளி',
+    recent_activity: 'சமீபத்திய நடவடிக்கை',
+    emergency_sos_response: '24/7 அவசர SOS சேவை',
+    emergency_sos_tag: 'கோவை காவல் அவசர உதவி',
+    sos_desc: 'கோயம்புத்தூர் நகர காவல் கட்டுப்பாட்டு அறைக்கு உடனடி 1-டேப் அழைப்பு. நேரடி ஜிபிஎஸ் இடம் & அருகில் உள்ள ரோந்து வாகனம் அனுப்பப்படும்.',
+    sos_avg_time: '⏱ 3 நிமிடம் சராசரி நேரம்',
+    sos_112_btn: '🚨 SOS 112',
+    quick_services: 'குடிமகன் சேவைகள்',
+    service_complaint: 'புகார் அளிக்கவும்',
+    service_police_noc: 'காவல் துறை சான்றிதழ்',
+    service_lost_found: 'காணாமல் போனவை',
+    service_traffic: 'போக்குவரத்து எச்சரிக்கை',
+
+    // Dashboard
+    all_features: 'அனைத்து அம்சங்கள்',
+    quick_shortcuts: 'விரைவு போர்டல் குறுக்குவழிகள்',
+    active_cases: 'செயலில் உள்ள வழக்குகள்',
+    sos_alerts: 'SOS எச்சரிக்கைகள்',
+    on_duty: 'பணியில் உள்ளவர்கள்',
+    available: 'கிடைக்கும்',
+    active: 'செயலில்',
+    recent_incidents: 'சமீபத்திய சம்பவங்கள்',
+    recent_sub: 'சமீபத்திய நிலை அறிக்கைகள்',
+    view_all: 'அனைத்தையும் காண',
+    active_patrols: 'செயலில் உள்ள கணிப்பு',
+
+    // Features
+    feature_ai: 'AI பகுப்பாய்வு',
+    feature_map: 'நேரடி சம்பவ வரைபடம்',
+    feature_evidence: 'ஆதாரங்கள்',
+    feature_women: 'பெண்கள் மற்றும் குழந்தைகள் பாதுகாப்பு',
+    feature_cases: 'வழக்குகள்',
+    feature_officers: 'அதிகாரிகள்',
+    feature_sos: 'SOS எச்சரிக்கைகள்',
+    feature_analytics: 'பகுப்பாய்வு',
+    feature_audit: 'தணிக்கை பதிவு',
+    feature_settings: 'அமைப்புகள்',
+
+    // Cases
+    case_management: 'வழக்கு மேலாண்மை',
+    case_list: 'வழக்கு பட்டியல்',
+    case_details: 'வழக்கு விவரங்கள்',
+    case_id: 'வழக்கு ID',
+    complainant: 'புகார்தாரர்',
+    incident: 'சம்பவம்',
+    evidence: 'ஆதாரம்',
+    location: 'இடம்',
+    timeline: 'காலவரிசை',
+    status_active: 'செயலில்',
+    status_closed: 'மூடப்பட்டது',
+    status_pending: 'நிலுவையில்',
+    no_cases: 'வழக்குகள் எதுவும் கிடைக்கவில்லை',
+    no_cases_sub: 'உங்கள் வடிகட்டிக்கு பொருந்தும் வழக்குகள் இல்லை.',
+    search_cases: 'வழக்குகளை தேடவும்...',
+    filter_all: 'அனைத்தும்',
+    filter_active: 'செயலில்',
+    filter_closed: 'மூடப்பட்டது',
+    filter_pending: 'நிலுவையில்',
+    assigned_officer: 'ஒதுக்கப்பட்ட அதிகாரி',
+    case_type: 'வழக்கு வகை',
+    filed_date: 'தாக்கல் தேதி',
+
+    // SOS
+    sos_center: 'SOS அவசர கால பதில்',
+    sos_active: 'செயலில் உள்ள SOS எச்சரிக்கைகள்',
+    sos_details: 'SOS விவரங்கள்',
+    dispatch: 'அனுப்புதல்',
+    dispatch_unit: 'அலகை அனுப்பவும்',
+    available_units: 'கிடைக்கும் அலகுகள்',
+    select_unit: 'அலகைத் தேர்ந்தெடுக்கவும்',
+    dispatch_confirm: 'அனுப்புதல் உறுதிப்படுத்தல்',
+    dispatch_success: 'அனுப்புதல் வெற்றி',
+    citizen_info: 'குடிமகன் தகவல்',
+    emergency_details: 'அவசரகால விவரங்கள்',
+    live_location: 'நேரடி இடம்',
+    response_timeline: 'பதில் காலவரிசை',
+    police_units: 'காவல்துறை அலகுகள்',
+    no_active_sos: 'செயலில் உள்ள SOS எச்சரிக்கைகள் இல்லை',
+    no_active_sos_sub: 'எல்லாம் சரிதான். இப்போது அவசரநிலை எதுவும் இல்லை.',
+    loading: 'ஏற்றப்படுகிறது…',
+    error_load: 'தரவை ஏற்ற முடியவில்லை. மீண்டும் முயற்சிக்கவும்.',
+    retry: 'மீண்டும் முயற்சி',
+
+    // Map
+    live_map: 'நேரடி சம்பவ வரைபடம்',
+    map_filters: 'வரைபட வடிகட்டிகள்',
+    incidents: 'சம்பவங்கள்',
+    hotspots: 'ஆபத்தான இடங்கள்',
+    search_map: 'இடத்தை தேடவும்…',
+    filter_all_map: 'அனைத்தும்',
+    filter_sos: 'SOS',
+    filter_women: 'பெண்கள் பாதுகாப்பு',
+    filter_child: 'குழந்தை பாதுகாப்பு',
+    filter_crime: 'குற்றம்',
+    filter_missing: 'காணாமல் போனவர்',
+    filter_vehicle: 'வாகன திருட்டு',
+    filter_units: 'காவல்துறை அலகுகள்',
+    filter_stations: 'காவல் நிலையங்கள்',
+
+    // Officers
+    officer_management: 'காவல்துறை அதிகாரிகள் மேலாண்மை',
+    officer_profile: 'அதிகாரி சுயவிவரம்',
+    officer_list: 'அதிகாரிகள் பட்டியல்',
+    rank: 'பதவி',
+    station: 'நிலையம்',
+    duty_status: 'பணி நிலை',
+    leaderboard: 'தரவரிசை',
+    performance: 'செயல்திறன்',
+    contact: 'தொடர்பு',
+    assigned_cases: 'ஒதுக்கப்பட்ட வழக்குகள்',
+    assigned_sos: 'ஒதுக்கப்பட்ட SOS',
+    activity: 'செயல்பாடு',
+    no_officers: 'அதிகாரிகள் எவரும் கிடைக்கவில்லை',
+
+    // Women Safety
+    women_safety: 'பெண்கள் மற்றும் குழந்தைகள் பாதுகாப்பு',
+    women_safety_sub: 'சிறப்பு பாதுகாப்பு அலகு',
+    priority_alerts: 'முன்னுரிமை எச்சரிக்கைகள்',
+    case_categories: 'வழக்கு வகைகள்',
+
+    // AI
+    ai_intelligence: 'AI வழக்கு நுண்ணறிவு',
+    risk_matrix: 'அபாய அணி',
+    ai_recommendations: 'AI பரிந்துரைகள்',
+    pattern_analysis: 'முறை பகுப்பாய்வு',
+    confidence: 'நம்பகத்தன்மை',
+    related_cases: 'தொடர்புடைய வழக்குகள்',
+
+    // Evidence
+    evidence_viewer: 'ஆதார பார்வையாளர்',
+    verification_status: 'சரிபார்ப்பு நிலை',
+    investigator_notes: 'விசாரணையாளர் குறிப்புகள்',
+
+    // Profile & Settings
+    my_profile: 'என் சுயவிவரம்',
+    officer_id: 'அதிகாரி ID',
+    logout: 'வெளியேறு',
+    settings: 'அமைப்புகள்',
+    language_select: 'மொழி',
+    view_assigned_cases: 'ஒதுக்கப்பட்ட வழக்குகளைக் காண',
+    view_assigned_sos: 'ஒதுக்கப்பட்ட SOS-ஐ காண',
+    view_performance: 'செயல்திறனைக் காண',
+    view_activity: 'செயல்பாட்டைக் காண',
+    current_location: 'தற்போதைய இடம்',
+
+    // Statuses
+    st_active: 'செயலில்',
+    st_critical: 'நெருக்கடி',
+    st_high: 'அதிகம்',
+    st_medium: 'நடுத்தர',
+    st_resolved: 'தீர்க்கப்பட்டது',
+    st_pending: 'நிலுவையில்',
+    st_available: 'கிடைக்கும்',
+    st_busy: 'பிஸியாக',
+    st_en_route: 'வழியில்',
+    st_on_duty: 'பணியில்',
+
+    // Common
+    back: '← பின்செல்',
+    save: 'சேமி',
+    cancel: 'ரத்து செய்',
+    view_details: 'விவரங்களைக் காண்க',
+    search: 'தேடல்',
+    filter: 'வடிகட்டி',
+    close: 'மூடு',
+    confirm: 'உறுதிப்படுத்து',
+    critical: 'நெருக்கடி',
+    high: 'அதிகம்',
+    medium: 'நடுத்தர',
+    low: 'குறைவு',
+  },
+};
+
+export function t(lang, key) {
+  const langData = translations[lang] || translations.en;
+  return langData[key] || translations.en[key] || key;
+}
+
+export function translateStatus(lang, statusValue) {
+  if (!statusValue) return '';
+  if (lang !== 'ta') return statusValue;
+
+  const mapping = {
+    'ACTIVE': 'செயலில்',
+    'CRITICAL': 'நெருக்கடி',
+    'HIGH': 'அதிகம்',
+    'MEDIUM': 'நடுத்தர',
+    'LOW': 'குறைவு',
+    'RESOLVED': 'தீர்க்கப்பட்டது',
+    'PENDING': 'நிலுவையில்',
+    'AVAILABLE': 'கிடைக்கும்',
+    'BUSY': 'பிஸியாக',
+    'EN ROUTE': 'வழியில்',
+    'ON DUTY': 'பணியில்',
+    'OFF DUTY': 'பணியில் இல்லை',
+    'SUBMITTED': 'சமர்ப்பிக்கப்பட்டது',
+    'IN_REVIEW': 'மறுஆய்வில்',
+    'ASSIGNED': 'ஒதுக்கப்பட்டது',
+    'IN_PROGRESS': 'செயல்பாட்டில்',
+    'PATROL_DISPATCHED': 'ரோந்து அனுப்பப்பட்டது',
+    'CANCELLED': 'ரத்து செய்யப்பட்டது',
+  };
+
+  return mapping[statusValue.toUpperCase()] || statusValue;
+}
+

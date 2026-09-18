@@ -1,0 +1,23 @@
+// src/context/LanguageContext.js
+// Global language state — persists selection across all screens
+
+import React, { createContext, useContext, useState } from 'react';
+
+const LanguageContext = createContext({
+  lang: 'en',
+  setLang: () => {},
+});
+
+export function LanguageProvider({ children }) {
+  const [lang, setLang] = useState('en');
+
+  return (
+    <LanguageContext.Provider value={{ lang, setLang }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+}
+
+export function useLanguage() {
+  return useContext(LanguageContext);
+}

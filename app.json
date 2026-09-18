@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "KOVAI KAVAL",
+    "slug": "kovai-kaval",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A1931"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kovaikaval.police"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "assets/adaptive-icon.png",
+        "backgroundColor": "#0A1931"
+      },
+      "package": "com.kovaikaval.police"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e7750e4c-bbe7-4b72-bab4-2247a96cf8f6"
+      }
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-splash-screen",
+      "expo-status-bar"
+    ]
+  }
+}
